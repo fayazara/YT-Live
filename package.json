@@ -1,0 +1,31 @@
+{
+  "name": "ytlive",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/firebase": "^7.5.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/toast": "^3.3.1",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "core-js": "^3.9.1",
+    "firebase": "^8.4.1",
+    "nuxt": "^2.15.3",
+    "nuxt-lazy-load": "^1.2.6",
+    "vue-clickaway": "^2.2.2",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vue-plyr": "^7.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "postcss": "^8.2.8"
+  }
+}
