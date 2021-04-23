@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="space-y-4 h-nav overflow-y-scroll">
+    <ul class="space-y-4">
       <yt-card
         v-for="(channel, c) in channels"
         :key="c"

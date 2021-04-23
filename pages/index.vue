@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <aside class="h-nav-screen top-0 sticky w-64 pt-[65px]">
+    <!-- <aside class="h-nav-screen top-0 sticky w-64 pt-[65px]">
       <ul>
         <li class="px-4 py-2">
           <div class="flex items-center space-x-2">
@@ -41,7 +41,7 @@
         <li class="px-4 py-2"></li>
         <li class="px-4 py-2"></li>
       </ul>
-    </aside>
+    </aside> -->
     <main class="container mx-auto py-12 flex-grow">
       <ul
         class="flex items-center space-x-2 w-full overflow-x-scroll px-4 lg:px-0 xl:px-0 mb-4 dark:mb-0"

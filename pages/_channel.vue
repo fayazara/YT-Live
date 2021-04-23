@@ -11,7 +11,9 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="py-4 border-b flex items-center space-x-2">
+        <div
+          class="py-4 border-b flex items-center space-x-2 px-4 md:px-0 lg:px-0 xl:px-0"
+        >
           <img
             class="h-9 w-9 rounded-full"
             :src="`/channel-logos/${channel.slug}.jpg`"
