@@ -1,3 +1,4 @@
+import state from "./state";
 import initialState from "./state";
 
 export default {
@@ -12,5 +13,9 @@ export default {
       photoURL: authUser.photoURL,
       displayName: authUser.displayName
     };
+  },
+
+  SET_USER_FAVOURITES: (state, channels) => {
+    state.favourites = channels;
   }
 };

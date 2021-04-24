@@ -1,6 +1,7 @@
 <template>
   <div class="relative group">
     <button
+      @click="save"
       class="absolute top-9 right-2 rounded bg-trans-gray h-8 w-8 z-30 flex items-center justify-center invisible group-hover:visible"
     >
       <svg
@@ -34,7 +35,7 @@
         </div>
       </div>
       <div
-        class="flex items-center justify-between px-4 md:px-0 lg:px-0 xl:px-0"
+        class="flex items-center justify-between px-4 md:px-0 lg:px-0 xl:px-0 mt-4 dark:mt-0"
         :class="{ 'mt-4': applyMargin }"
       >
         <div class="flex items-center space-x-2">
@@ -54,6 +55,25 @@
 <script>
 export default {
   props: ["channel", "applyMargin"],
+  methods: {
+    async save() {
+      const messageRef = this.$fire.firestore
+        .collection(this.$store.getters["authUser"].uid)
+        .doc(this.channel.name);
+      try {
+        await messageRef.set(this.channel);
+      } catch (e) {
+        this.$toast.error(e);
+        return;
+      }
+      this.$toast.success("Added to favourites");
+    },
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.getters["isLoggedIn"];
+    },
+  },
 };
 </script>
 

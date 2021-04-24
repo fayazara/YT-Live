@@ -33,6 +33,6 @@ export default {
     }
     console.log("AuthStateChangedAction", authUser);
     commit("SET_AUTH_USER", authUser);
-    this.$router.push("/profile");
+    this.$router.push("/");
   }
 };

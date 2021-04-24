@@ -12,5 +12,8 @@ export default {
     } catch {
       return null;
     }
+  },
+  userFavourites: state => {
+    return state.favourites;
   }
 };

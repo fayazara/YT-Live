@@ -47,9 +47,9 @@
         </div>
         <nuxt-link
           @click.native="closeMenu"
-          to="/profile"
+          to="/help"
           class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700"
-          >Profile</nuxt-link
+          >Help</nuxt-link
         >
         <nuxt-link
           @click.native="closeMenu"

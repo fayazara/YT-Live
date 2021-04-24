@@ -48,7 +48,7 @@
       >
         <li v-for="language in languages" :key="language">
           <button
-            class="language-button"
+            class="px-4 py-1 rounded-full border text-sm focus:outline-none"
             @click="filterLanguage(language)"
             :class="
               chosenLanguage === language
@@ -112,10 +112,6 @@ export default {
 </script>
 
 <style scoped>
-.language-button {
-  @apply px-4 py-1 rounded-full border text-sm focus:outline-none;
-}
-
 .h-nav-screen {
   height: 75vh;
 }

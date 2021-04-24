@@ -1,3 +1,4 @@
 export default () => ({
-  authUser: null
+  authUser: null,
+  favourites: []
 });
