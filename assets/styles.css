@@ -24,3 +24,7 @@ body {
 .backdrop-filer {
   backdrop-filter: 8px;
 }
+
+.h-nav-screen {
+  height: 75vh;
+}

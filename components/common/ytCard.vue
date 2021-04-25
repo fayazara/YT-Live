@@ -46,7 +46,8 @@
           />
           <p class="font-semibold">{{ channel.name }}</p>
         </div>
-        <p class="text-xs">{{ channel.country }}</p>
+        <gb-flag :code="channel.country_code" size="small" />
+        <!-- <p class="text-xs">{{ channel.country }}</p> -->
       </div>
     </nuxt-link>
   </div>

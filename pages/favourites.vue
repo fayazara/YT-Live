@@ -16,6 +16,11 @@ import ytCard from "~/components/common/ytCard.vue";
 export default {
   middleware: "auth",
   components: { ytCard },
+  data() {
+    return {
+      loading: false,
+    };
+  },
   computed: {
     isLoggedIn() {
       return this.$store.getters["isLoggedIn"];
@@ -28,16 +33,19 @@ export default {
   methods: {
     async getFavs() {
       // Get Favourites
-      const messageRef = this.$fire.firestore.collection(
-        this.$store.getters["authUser"].uid
-      );
       try {
+        this.loading = true;
+        const messageRef = this.$fire.firestore.collection(
+          this.$store.getters["authUser"].uid
+        );
         const messageDoc = await messageRef.get();
         let favourites = messageDoc.docs.map((doc) => doc.data());
         if (favourites.length)
           this.$store.commit("SET_USER_FAVOURITES", favourites);
+        this.loading = false;
       } catch (e) {
-        alert(e);
+        this.$toast.error(e);
+        this.loading = false;
         return;
       }
     },
@@ -47,6 +55,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

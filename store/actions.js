@@ -31,7 +31,6 @@ export default {
       commit("RESET_STORE");
       return;
     }
-    console.log("AuthStateChangedAction", authUser);
     commit("SET_AUTH_USER", authUser);
     this.$router.push("/");
   }
