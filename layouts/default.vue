@@ -2,7 +2,6 @@
   <div class="dark:text-white text-gray-800">
     <navbar />
     <Nuxt />
-    <!-- <footr /> -->
   </div>
 </template>
 

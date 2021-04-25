@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto py-12">
+  <main class="container mx-auto pt-24 lg:pt-28">
     <div>
       <h1 class="text-xl font-semibold mb-4 px-4">Your Favourites</h1>
       <div

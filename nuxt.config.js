@@ -5,7 +5,12 @@ export default {
   head: headConfig,
   pwa: pwaConfig,
   css: ["~/assets/styles.css"],
-  plugins: [{ src: "~/plugins/plyr", mode: "client" }, "~/plugins/flags"],
+  plugins: [
+    { src: "~/plugins/plyr", mode: "client" },
+    "~/plugins/flags",
+    "~/plugins/modal",
+    "~/plugins/gtag"
+  ],
   components: true,
   buildModules: ["@nuxtjs/tailwindcss"],
   tailwindcss: {

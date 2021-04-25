@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto py-12">
+  <main class="container mx-auto pt-24 lg:pt-28">
     <ul
       class="flex items-center space-x-2 w-full overflow-x-scroll px-4 lg:px-0 xl:px-0 mb-4 dark:mb-0"
     >

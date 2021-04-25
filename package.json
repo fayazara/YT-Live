@@ -22,6 +22,7 @@
     "nuxt": "^2.15.3",
     "nuxt-lazy-load": "^1.2.6",
     "vue-clickaway": "^2.2.2",
+    "vue-gtag": "^1.14.0",
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-plyr": "^7.0.0"
   },

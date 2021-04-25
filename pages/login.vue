@@ -8,6 +8,9 @@
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Sign in to your account
         </h2>
+        <p class="mt-2 text-center text-sm text-gray-600">
+          For saving and marking channels as favourites
+        </p>
       </div>
       <div>
         <button
@@ -40,6 +43,7 @@ export default {
   methods: {
     async signInWithGoogle() {
       try {
+        this.$gtag.event("login", { method: "Google" });
         var provider = new this.$fireModule.auth.GoogleAuthProvider();
         await this.$fire.auth.signInWithPopup(provider);
       } catch (err) {

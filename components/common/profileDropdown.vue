@@ -39,17 +39,18 @@
     >
       <div
         v-if="showMenu"
-        class="origin-top-right absolute top-10 right-0 rounded-md shadow-lg border border-gray-300 dark:border-gray-900 dark:divide-gray-900 bg-white dark:bg-gray-800 overflow-hidden"
+        class="origin-top-right absolute top-10 right-0 rounded-md shadow-lg border border-gray-300 dark:border-gray-900 dark:divide-gray-900 bg-white dark:bg-gray-800 overflow-hidden text-gray-500 dark:text-gray-100"
       >
         <div class="px-4 py-2 border-b dark:border-gray-900">
           <p class="text-xs">Signed in as</p>
-          <p class="text-gray-500 dark:text-gray-500">{{ user.email }}</p>
+          <p>{{ user.email }}</p>
         </div>
-        <nuxt-link
-          @click.native="closeMenu"
-          to="/help"
+        <a
+          href="https://github.com/fayazara/YT-Live"
+          target="_blank"
+          rel="noopener"
           class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700"
-          >Help</nuxt-link
+          >Help</a
         >
         <nuxt-link
           @click.native="closeMenu"

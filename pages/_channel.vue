@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto py-0 lg:py-8 xl:py-8">
+  <main class="container mx-auto pt-16 lg:pt-28">
     <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4">
       <div class="col-span-1 lg:col-span-2 xl:col-span-2">
         <div class="overflow-hidden relative w-full video-container">
@@ -12,14 +12,17 @@
           ></iframe>
         </div>
         <div
-          class="py-4 border-b flex items-center space-x-2 px-4 md:px-0 lg:px-0 xl:px-0"
+          class="flex item-center justify-between py-4 border-b px-4 md:px-0 lg:px-0 xl:px-0"
         >
-          <img
-            class="h-9 w-9 rounded-full"
-            :src="`/channel-logos/${channel.slug}.jpg`"
-            :alt="channel.name"
-          />
-          <h1 class="text-xl font-semibold">{{ channel.name }}</h1>
+          <div class="flex items-center space-x-2">
+            <img
+              class="h-9 w-9 rounded-full"
+              :src="`/channel-logos/${channel.slug}.jpg`"
+              :alt="channel.name"
+            />
+            <h1 class="text-xl font-semibold">{{ channel.name }}</h1>
+          </div>
+          <gb-flag :code="channel.country_code" size="small" />
         </div>
       </div>
       <suggested-channels
