@@ -47,7 +47,9 @@
             class="hidden lg:flex lg:items-center lg:justify-between xl:w-1/4 px-6"
           >
             <a
-              href="#"
+              href="https://github.com/fayazara/YT-Live"
+              target="_blank"
+              rel="noopener"
               class="bg-gray-200 dark:bg-gray-700 rounded-lg px-4 py-2 flex-shrink-0 flex items-center space-x-2 mr-4"
             >
               <svg

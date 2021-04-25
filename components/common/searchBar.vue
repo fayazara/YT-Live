@@ -20,9 +20,7 @@
       </div>
     </div>
     <modal adaptive focusTrap name="searchModal">
-      <div
-        class="p-4 flex items-center justify-between bg-white dark:bg-gray-700"
-      >
+      <div class="p-4 flex items-center justify-between">
         <div class="flex items-center space-x-4">
           <svg
             class="fill-current w-4 h-4"
@@ -48,12 +46,12 @@
           ×
         </button>
       </div>
-      <ul class="h-64 overflow-y-scroll divide-y bg-white dark:bg-gray-700">
+      <ul class="h-64 overflow-y-scroll divide-y dark:divide-gray-600 bg-white dark:bg-gray-700">
         <li v-for="(channel, c) in channels" :key="c">
           <nuxt-link
             @click.native="$modal.hide('searchModal')"
             :to="channel.slug"
-            class="p-4 flex items-center justify-between"
+            class="p-4 flex items-center justify-between focus:bg-gray-600"
           >
             <p class="text-fb-blue font-semibold">
               {{ channel.name }} ({{ channel.language }})

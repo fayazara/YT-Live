@@ -28,3 +28,7 @@ body {
 .h-nav-screen {
   height: 75vh;
 }
+
+.vm--modal {
+  @apply bg-white dark:bg-gray-700 rounded-lg !important;
+}
