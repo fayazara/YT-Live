@@ -19,14 +19,6 @@
         </li>
       </ul>
       <!-- Countries -->
-      <select
-        class="bg-transparent text-gray-900 rounded-lg border-0 form-select p-0 pl-3.5 pr-[1.875rem] h-9 w-full sm:text-sm font-medium focus:shadow-none focus-visible:ring-2 focus-visible:ring-teal-500"
-        style="background-image: none"
-      >
-        <option value="html">HTML</option>
-        <option value="react">React</option>
-        <option value="vue">Vue</option>
-      </select>
       <!-- Countries -->
     </div>
     <div
